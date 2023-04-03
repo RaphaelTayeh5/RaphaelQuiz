@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new2.css">
+    <title>Welcome To The Quiz</title>
+	<div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+	
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 00px;
+      }
+      input[type="text"], input[type="number"] {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      button[type="submit"] {
+        padding: 1.3rem;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <h1> Welcome to my Football Quiz. This Quiz is made to test your football knowledge. Enjoy!</h1>
+    <div>
+      <form id="user-info-form">
+        <label for="fname"><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" id="lname" name="lname" required>
+        <label for="age"><b>Age:</b></label>
+        <input type="number" id="age" name="age" required>
+        <a href="MyQuiz.html"><button type="submit"><b>Submit</b></button></a>
+      </form>
+    </div>
+	<script>
+      document.getElementById("user-info-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "MyQuiz.html";
+      });
+    </script>
+  </body>
+</html>
